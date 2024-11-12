@@ -90,6 +90,7 @@ class BaseClient:
             session_method = {
                 "GET": session.get,
                 "POST": session.post,
+                "PUT": session.put,
                 "DELETE": session.delete,
             }.get(method)
             assert session_method is not None
